@@ -1,0 +1,673 @@
+body.main{
+  background-image: none;
+}
+
+.m-header{
+  background: #090909 url('../img/m-header__bg.jpg') center top no-repeat;
+  background-size: cover;
+  //height: 100vh;
+  height: 818px;
+  .f-container{
+    display: flex;
+    justify-content: space-between;
+  }
+  .f-row{
+    display: flex;
+    flex-direction: column;
+    @media($bp-larger-than-tablet){
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  &__menu{
+    width: 180px;
+    padding-top: 45px;
+    display: none;
+    @media($bp-larger-than-tablet){
+      display: block;
+    }
+  }
+  &__center{
+    padding-top: 34px;
+  }
+  &__contacts{
+    width: auto;
+    text-align: right;
+    padding-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    @media($bp-larger-than-tablet){
+      width: 180px;
+      padding-top: 46px;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    a{
+      color: #fff;
+      &:hover{
+        color: $gold;
+      }
+    }
+  }
+}
+
+.m-menu{
+  &__caption{
+    font-size: 16px;
+    color: $gold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 3.5px;
+  }
+  &__list{
+    padding-left: 25px;
+    list-style-type: none;
+    position: relative;
+    &:before{
+      content: "";
+      display: inline-block;
+      width: 5px;
+      top: 6px;
+      bottom: 6px;
+      left: 0;
+      background: transparent url('../img/line-gold.png') left top repeat-y;
+      position: absolute;
+    }
+    li{
+      margin-bottom: 21px;
+    }
+    a{
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      transition: $anim;
+      &:hover{
+        color: $gold;
+      }
+    }
+  }
+}
+.m-contacts{
+  &__row{
+    margin-bottom: 10px;
+    width: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    @media($bp-larger-than-tablet){
+      margin-bottom: 23px;
+      margin-left: 0;
+      margin-right: 0;
+      width: auto;
+    }
+  }
+  &__value{
+    font-size: 14px;
+    color: #fff;
+    transition: $anim;
+    font-weight: bold;
+    width: 150px;
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    letter-spacing: 0.5px;
+    &--email{
+      &:before{
+        display: inline-block;
+        content: "";
+        left: 0;
+        @include sprite($header-email);
+        position: absolute;
+        top: 3px;
+      }
+    }
+    &--phone{
+      &:before{
+        display: inline-block;
+        content: "";
+        left: 0;
+        @include sprite($header-phone);
+        position: absolute;
+        top: -2px;
+      }
+    }
+  }
+}
+.m-logo{
+  text-align: center;
+  margin-bottom: 30px;
+  @media($bp-larger-than-tablet){
+    margin-bottom: 80px;
+  }
+  img{
+    width: 100%;
+    max-width: 359px;
+    @media($bp-larger-than-phablet){
+      width: auto;
+    }
+  }
+}
+.m-slogan{
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  line-height: 140%;
+  max-width: 600px;
+  letter-spacing: 3px;
+  @media($bp-larger-than-tablet){
+    font-size: 42px;
+  }
+}
+
+.m-warranty{
+  width: 100%;
+  height: 1px;
+  position: relative;
+  margin-top: 50px;
+  @media($bp-larger-than-tablet){
+    margin-top: 220px;
+  }
+  @media($bp-larger-than-desktop){
+    margin-top: 175px;
+  }
+  @media($bp-larger-than-desktophd){
+    margin-top: 116px;
+  }
+  &__box{
+    position: relative;
+    width: 100%;
+    top: 0;
+    right: 0;
+    text-align: center;
+    @media($bp-larger-than-tablet){
+      position: absolute;
+      width: 360px;
+    }
+    &:before{
+      content: "";
+      display: inline-block;
+      width: 5px;
+      height:100px;
+      bottom: -143px;
+      left: 178px;
+      background: transparent url('../img/line-gold.png') left top repeat-y;
+      position: absolute;
+    }
+    &:after{
+      content: "";
+      display: inline-block;
+      width: 5px;
+      height:100px;
+      bottom: -173px;
+      left: 229px;
+      background: transparent url('../img/line-white.png') left top repeat-y;
+      position: absolute;
+    }
+    img{
+      margin-right: -28px;
+    }
+  }
+  &__text{
+    font-size: 34px;
+    color: #bb9b68;
+    font-weight: 300;
+    line-height: 120%;
+  }
+}
+.b-coat-collection{
+  background: #090909 url('../img/m-coat-collection.jpg') center top no-repeat;
+  min-height: 1700px;
+}
+.b-coating{
+  padding: 57px 0;
+  //background: #090909 url('../img/main-leather-1.jpg') center top no-repeat;
+  &__header{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 30px;
+    letter-spacing: 3px;
+    position: relative;
+    z-index: 2;
+    @media($bp-larger-than-phablet){
+      margin-bottom: 62px;
+    }
+    @media($bp-larger-than-tablet){
+      font-size: 42px;
+    }
+
+  }
+  .f-row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media($bp-larger-than-desktop){
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  }
+  &__text{
+    color: #fff;
+    font-size: 16px;
+    line-height: 180%;
+    position: relative;
+    @media($bp-larger-than-tablet){
+      padding-right: 30px;
+      padding-top: 20px;
+    }
+    &:before{
+      position: absolute;
+      content: "";
+      top: 6px;
+      left: -42px;
+      right: 93px;
+      height: 1px;
+      border-top: 1px dashed $gray;
+      display: none;
+      @media($bp-larger-than-phablet){
+        display: inline-block;
+      }
+    }
+    &:after{
+      position: absolute;
+      content: "";
+      top: 6px;
+      left: -42px;
+      bottom: 36px;
+      width: 1px;
+      border-left: 1px dashed $gray;
+      display: none;
+      @media($bp-larger-than-phablet){
+        display: inline-block;
+      }
+    }
+  }
+  &__image{
+    width: 386px;
+    margin-left: 43px;
+    margin-right: 43px;
+    position: relative;
+    height: 410px;
+    transform: scale(0.75);
+    @media($bp-larger-than-phablet) {
+      transform: scale(1);
+    }
+    img{
+      clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 70% 90%, 70% 100%, 0% 100%) margin-box;
+    }
+    &:before{
+      content: "";
+      display: inline-block;
+      width: 5px;
+      height: 141px;
+      bottom: 26px;
+      right: -27px;
+      background: transparent url('../img/line-gold.png') left top repeat-y;
+      position: absolute;
+    }
+    &:after{
+      content: "";
+      display: inline-block;
+      height: 5px;
+      width: 141px;
+      bottom: 15px;
+      right: -30px;
+      background: transparent url('../img/line-gold-vertical.png') left top repeat-x;
+      position: absolute;
+      z-index: 2;
+    }
+  }
+  &__line{
+    position: absolute;
+    top: -136px;
+    width: 15px;
+    background: transparent url('../img/m-coating__line.png') center top no-repeat;
+    height: 445px;
+    left: -36px;
+    display: none;
+    @media($bp-larger-than-desktop){
+      display: block;
+    }
+  }
+}
+
+.b-collection{
+  padding: 30px 0 30px;
+  @media($bp-larger-than-tablet){
+    padding: 75px 0 40px;
+  }
+  @media($bp-larger-than-desktop){
+    padding: 75px 0 200px;
+  }
+  
+  &__header{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 58px;
+    letter-spacing: 3px;
+    position: relative;
+    z-index: 2;
+    @media($bp-larger-than-tablet){
+      font-size: 42px;
+    }
+  }
+  &__image{
+    height: 227px;
+    width: 260px;
+    margin-top: 25px;
+    margin-bottom: 36px;
+    margin-left: -10px;
+    margin-right: 64px;
+    display: flex;
+    align-items: flex-end;
+    @media($bp-larger-than-mobile){
+      height: 257px;
+      width: 360px;
+      margin-left: -40px;
+    }
+  }
+  &__list{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    @media($bp-larger-than-desktop){
+      flex-direction: row;
+    }
+  }
+  &__card{
+    position: relative;
+    max-width: 385px;
+    z-index: 5;
+    margin-left: auto;
+    margin-right: auto;
+    @media($bp-larger-than-desktop){
+      margin-left: 97px;
+      margin-right: 0;
+    }
+    &:before{
+      background-color: #310000;
+      width: 112px;
+      top: -29px;
+      bottom: 24px;
+      left: -78px;
+      transform: skew(-45deg);
+      position: absolute;
+      display: block;
+      content: "";
+      transform-origin: left bottom;
+    }
+    &:after{
+      border: 1px solid $red;
+      width: 112px;
+      top: -23px;
+      bottom: 18px;
+      left: -72px;
+      transform: skew(-45deg);
+      position: absolute;
+      display: block;
+      content: "";
+      transform-origin: left bottom;
+      z-index: 1;
+    }
+    .triangle__btn{
+      margin-left: 50px;
+      margin-bottom: 30px;
+    }
+    &:hover{
+      .b-collection__border {
+        border-color: #563a0d;
+        &:before{
+          background: transparent url('../img/line-gold.png') center top repeat-y;
+        }
+      }
+      .triangle__btn{
+        background-color: rgba(0,0,0,0.4);
+        color: $red;
+        border-color: $red;
+        &:before{
+          border-left-color: $red;
+          border-top-color: $red;
+        }
+        &:after{
+          border-left-color: $red;
+          border-bottom-color: $red;
+        }
+      }
+      .triangle__angles{
+        &:before{
+          border-right-color: $red;
+          border-top-color: $red;
+        }
+        &:after{
+          border-right-color: $red;
+          border-bottom-color: $red;
+        }
+      }
+      .triangle__text{
+        &:before{
+          background: $red;
+        }
+        &:after{
+          border-left-color: $red;
+        }
+      }
+
+
+    }
+  }
+  &__item{
+    padding-left: 14px;
+    display: block;
+    text-decoration: none;
+    &:last-child{
+      margin-top: 70px;
+    }
+    *{
+      transition: $anim;
+    }
+  }
+  &__border{
+    border-width: 1px 0 1px 1px;
+    border-color: #fff;
+    border-style: solid;
+    position: relative;
+    z-index: 2;
+    &:before{
+      content: "";
+      width: 10px;
+      position: absolute;
+      top: 4px;
+      bottom: 4px;
+      right: -5px;
+      background: transparent url('../img/line-white.png') center top repeat-y;
+      transition: $anim;
+    }
+  }
+  &__name{
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 41px;
+    position: relative;
+    letter-spacing: 2px;
+    &:before{
+      content: "";
+      display: block;
+      width: 10px;
+      height: 36px;
+      background: transparent url('../img/line-red.png') center top repeat-y;
+      bottom: -55px;
+      position: absolute;
+    }
+  }
+}
+
+
+.m-reviews {
+  padding: 40px 0 0px;
+  @media($bp-larger-than-tablet){
+    padding: 40px 0 40px;
+  }
+  &__header {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 102px;
+    letter-spacing: 3px;
+    position: relative;
+    z-index: 2;
+    line-height: 150%;
+    @media($bp-larger-than-tablet){
+      font-size: 42px;
+    }
+  }
+  &__list{
+    //display: flex;
+    //flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  &__item{
+    //width: 50%;
+    display: flex;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-direction: column;
+    @media($bp-larger-than-phablet){
+      flex-direction: row;
+    }
+  }
+  &__image{
+    width: 50%;
+    position: relative;
+    display: none;
+    @media($bp-larger-than-phablet){
+      display: block;
+    }
+    &:before{
+      content: "";
+      display: inline-block;
+      width: 175px;
+      height: 175px;
+      border: 1px solid $gold;
+      position: absolute;
+      transform: rotate(-45deg);
+      bottom: -9px;
+      right: 20px;
+    }
+    &:after{
+      content: "";
+      display: block;
+      width: 40px;
+      height: 40px;
+      background-color: #31230d;
+      position: absolute;
+      right: -18px;
+      top: -18px;
+      transform: rotate(-45deg);
+    }
+    img{
+      position: relative;
+      z-index: 3;
+    }
+  }
+  &__info{
+    padding-left: 30px;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__name{
+    font-size: 16px;
+    color: $gold;
+    margin-bottom: 12px;
+  }
+  &__text{
+    color: #fff;
+    font-size: 12px;
+    line-height: 165%;
+  }
+  &__more{
+    margin-top: auto;
+    display: flex;
+    a{
+      text-decoration: none;
+      padding-bottom: 14px;
+      position: relative;
+      transition: $anim;
+      &:hover{
+        color: #fff;
+      }
+      &:before{
+        content: "";
+        display: inline-block;
+        height: 5px;
+        left: 0;
+        bottom: 4px;
+        right: 0px;
+        background: transparent url('../img/line-gold-vertical.png') left top repeat-x;
+        position: absolute;
+        z-index: 2;
+      }
+      &:after{
+        content: "";
+        position: absolute;
+        display: inline-block;
+        @include sprite($quot-gold);
+        right: -62px;
+        top: 2px;
+      }
+    }
+  }
+  .slick-list{
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .slick-arrow{
+    border: 1px solid $gold;
+    background-color: transparent;
+    color: transparent;
+    width: 38px;
+    height: 38px;
+    position: absolute;
+    transform: rotate(45deg);
+    &:before{
+      content: "\f178";
+      display: inline-block;
+      color: $gold;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      line-height: 38px;
+      font-family: FontAwesome;
+      transform: rotate(-45deg);
+    }
+    &.slick-next{
+      right: 20px;
+      top: -30px;
+      &:before{
+        content: "\f178";
+      }
+    }
+    &.slick-prev{
+      left: 20px;
+      top: -30px;
+      &:before{
+        content: "\f177";
+      }
+    }
+  }
+}
+
+.b-coat-collection + .m-reviews{
+  @media($bp-larger-than-desktop){
+    margin-top: -426px;
+  }
+}

@@ -1,0 +1,51 @@
+@font-face {
+  font-family:'PFDinTextPro';
+  src:url('/assets/template/fonts/PFDinTextPro-Regular.eot');
+  src:local('?'), url('/assets/template/fonts/PFDinTextPro-Regular.woff') format('woff'), url('/assets/template/fonts/PFDinTextPro-Regular.ttf') format('truetype'), url('/assets/template/fonts/PFDinTextPro-Regular.svg') format('svg');
+  font-weight:normal;
+  font-style:normal;
+}
+@font-face {
+  font-family:'PFDinTextPro-light';
+  src:url('/assets/template/fonts/light/pfdintextpro-light.eot');
+  src:local('?'), url('/assets/template/fonts/light/pfdintextpro-light.woff') format('woff'), url('/assets/template/fonts/light/pfdintextpro-light.ttf') format('truetype'), url('/assets/template/fonts/light/pfdintextpro-light.svg') format('svg');
+  font-weight:normal;
+  font-style:normal;
+}
+
+@font-face {
+    font-family:'DINCondensedC';
+    src:local('?'), url('/assets/template/fonts/DINCondensedC.ttf') format('truetype');
+    font-weight:normal;
+    font-style:normal;}
+
+@font-face {
+    font-family:'pfdintextpro-medium';
+    src:local('?'), url('/assets/template/fonts/pfdintextpro-medium.ttf') format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+
+.search_submit {
+    background-color: transparent;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4AIaChEHX95m3AAAApRJREFUWMPtlk1IVVEQx38+RMJE+nARERIRBiKUElJQtKgg6Nk3tDJa1GKMMopoGa1CiEoo/4sCgxZlCyOzD0JoUYuIFkIuwkWEhbh4VIuSeMijzTw4np5570vd1MCFmXvm3P//zpyZM/CvS8VcfMTMqoA6oADkJE3NOwEzqweOA3uARqDSl/LAMPAAuCUpN6cEzGwRcBE4DVTN4v7dfa9IKvw1ATOrAx4DrdHSN+AjkAHWADXR+iBwWNJk/M1MCvBq4GkEfh/YDCyX1CxpPbAU2A4MBX5ZoM/MfsOrTBGALmCj65NAu6T+gGAGOOJrA5J2mlkH0O04WeAMcDl1BMysEehws+Dh7I/cdgG9QB/wzsxaJPUAnYHPBU9j6hScDHxvSxos4TPsD8Ba4IWZbXASxXTUAMfKIbAv0C+VcpA0LqkZ2ApMALXAXe8RXYHr/lRVYGargE9ujkpal2DPFuClmweBAeCrRyAPLC42qyQRWBnoo0nCJekV8NbNWgf74HaxayaugpBkIUXVtAEtwLMSezNpCEwE+uqk6JImgCdBiRb3TgG5NIdwDPjiepOfibTSCixxfURSPjEB7+GDgX9nGQTORm05dRneCPRTZrYpRQs/ABwKbsqb5RAY8VQUT/GjJCTMLAvcCV5dkzSWtg9UAw+BHdFSHrgOXJX0OdrTAJwHjgY/+RrYFuZ/VgJ/ACcqzZHgOm7wJ5Q3wO5Sw0lFmeBjQH2C1BWAHuCcpJ+JB5JZwIeAvUATcMKv2WWRz7i3325J71ONZEnAw8nGm0w9sML/eDw+E4kJJABvmymU5Upchr0LCT4tAj7t/ihB6rmHfc7B4wjko4tn3sGnEfCe3+4nuADcm2/wmeo/42PUf1kQ+QUiz+cqFaHqEgAAAABJRU5ErkJggg==");
+    background-position: 50% center;
+    background-repeat: no-repeat;
+    background-size: 18px auto;
+    border: 0 none;
+    height: 28px;
+    padding: 0;
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    width: 28px;
+    cursor: pointer;
+}
+.search_input {
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    height: 30px;
+    padding: 0 28px 0 5px;
+    width: 100%;
+    color: #333;
+}

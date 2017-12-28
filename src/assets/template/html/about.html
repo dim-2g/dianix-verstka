@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Webdevkin • Backbone.js + RequireJS</title>
+
+    <!-- @if NODE_ENV='development' -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="/assets/templates/css/main.css">
+    <!-- @endif -->
+
+    <!-- @if NODE_ENV='production' -->
+    <link rel="stylesheet" href="/assets/templates/css/main.min.css">
+    <!-- @endif -->
+</head>
+<body>
+    <h1>Заголовок о компании</h1>
+    <p class="sdv">Текст о компании</p>
+    <!-- @if NODE_ENV='development' -->
+    <script data-main="js/main" src="lib/require.js"></script>
+    <!-- @endif -->
+
+    <!-- @if NODE_ENV='production' -->
+    <script data-main="js/build" src="js/require.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- @endif -->
+</body>
+</html>

@@ -1,0 +1,206 @@
+@import 'modules/variables';
+@import '../fonts/Lato/lato.css';
+@import '../fonts/FontAwesome/font-awesome.min.css';
+@import 'skeleton/skeleton';
+@import 'sprites/sprite';
+@import 'sprites/sprite';
+
+//@import 'modules/mainpage';
+@import 'modules/common';
+
+
+a{
+  color: $gold;
+  outline: none;
+  &:focus{
+    outline: none;
+  }
+}
+*{
+  box-sizing: border-box;
+}
+.container{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.f-container{
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.topline{
+  background-color: #3f434e;
+  color: #fff;
+  a{
+    color: #fff;
+  }
+  .f-row{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    justify-content: space-between;
+  }
+  .logo{
+    align-self: flex-start;
+  }
+  &__search{
+    display: none;
+    position: relative;
+    @media($bp-larger-than-desktop){
+      max-width: 200px;  
+      display: block;
+    }
+  }
+  .search-mobile{
+    display: block;
+    height: 30px;
+    width: 30px;
+    position: relative;
+    @media($bp-larger-than-desktop){
+      display: none;
+    }
+    &:before{
+      display: inline-block;
+      height: 30px;
+      width: 30px;
+      content: "\f002";
+      font-family: FontAwesome;
+      font-size: 20px;
+      text-align: center;
+      line-height: 28px;
+    }
+  }
+  &__contacts{
+    text-transform: uppercase;
+    flex: 1;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'PFDinTextPro-light', sans-serif;
+    a{
+      text-decoration: none;
+    }
+    > *{
+      padding-top: 4px;
+    }
+  }
+}
+
+ul.comercmenu{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 140px;
+  li{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    a { 
+      font-family: 'PFDinTextPro-light'; 
+      font-size: 12px; 
+      text-decoration: none;
+      text-transform: uppercase; 
+      color: #38302e; 
+      display: inline-block;
+      padding: 65px 0 0;
+      position: relative;
+      line-height: 110%;
+      @media($bp-larger-than-desktop){
+        font-size: 14px; 
+      }
+      &:before{
+        content: "";
+        display: block;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 15px;
+      }
+      &.tm10{
+        &:before{
+          @include sprite($zamer);
+        }
+        &:hover{
+          &:before{
+            @include sprite($zamerh);
+          }
+        }
+      }
+      &.tm20{
+        &:before{
+          @include sprite($zvonok);
+        }
+        &:hover{
+          &:before{
+            @include sprite($zvonokh);
+          }
+        }
+      }
+      &.tm30{
+        &:before{
+          @include sprite($calc);
+        }
+        &:hover{
+          &:before{
+            @include sprite($calch);
+          }
+        }
+      }
+      &.tm40{
+        &:before{
+          @include sprite($vopros);
+        }
+        &:hover{
+          &:before{
+            @include sprite($voprosh);
+          }
+        }
+      }
+      &.tm50{
+        &:before{
+          @include sprite($skidki);
+        }
+        &:hover{
+          &:before{
+            @include sprite($skidkih);
+          }
+        }
+      }
+      &.tm60{
+        &:before{
+          @include sprite($price);
+        }
+        &:hover{
+          &:before{
+            @include sprite($priceh);
+          }
+        }
+      }
+      
+    }
+  } 
+} 
+/*
+.tm1 { background:  url(/assets/img/zamer.png) center 15px no-repeat; padding: 65px 0 0; }
+.tm1:hover { background:  url(img/zamerh.png) center 15px no-repeat; padding: 65px 0 0; }
+
+.tm2 { background:  url(img/zvonok.png) center 15px no-repeat; padding: 65px 0 0; }
+.tm2:hover { background:  url(img/zvonokh.png) center 15px no-repeat; padding: 65px 0 0; }
+
+.tm3 { background:  url(img/calc.png) center 15px no-repeat; padding: 65px 0 0; }
+.tm3:hover { background:  url(img/calch.png) center 15px no-repeat; padding: 65px 0 0; }
+.tm4 { background:  url(img/vopros.png) center 15px no-repeat; padding: 65px 0 0; }
+.tm4:hover { background:  url(img/voprosh.png) center 15px no-repeat; padding: 65px 0 0; }
+
+.tm5 { background:  url(img/skidki.png) center 15px no-repeat; padding: 65px 0 0; }
+.tm5:hover { background:  url(img/skidkih.png) center 15px no-repeat; padding: 65px 0 0; }
+
+.tm6 { background:  url(img/price.png) center 15px no-repeat; padding: 65px 0 0; }
+.tm6:hover { background:  url(img/priceh.png) center 15px no-repeat; padding: 65px 0 0; }
+*/
+.hov:hover{ color: #7bab0d;}
