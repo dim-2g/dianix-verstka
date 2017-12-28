@@ -30,7 +30,9 @@ a{
   padding-left: 15px;
   padding-right: 15px;
 }
-
+.header{
+  background: transparent url('../img/bghead.png') left top;
+}
 .topline{
   background-color: #3f434e;
   color: #fff;
@@ -92,7 +94,10 @@ a{
 ul.comercmenu{
   display: flex;
   justify-content: space-between;
-  margin-left: 140px;
+  margin-left: 150px;
+  margin-bottom: 0;
+  align-items: center;
+  height: 106px;
   li{
     list-style-type: none;
     margin: 0;
@@ -110,6 +115,7 @@ ul.comercmenu{
       padding: 65px 0 0;
       position: relative;
       line-height: 110%;
+      transition: $anim;
       @media($bp-larger-than-desktop){
         font-size: 14px; 
       }
@@ -185,22 +191,46 @@ ul.comercmenu{
     }
   } 
 } 
-/*
-.tm1 { background:  url(/assets/img/zamer.png) center 15px no-repeat; padding: 65px 0 0; }
-.tm1:hover { background:  url(img/zamerh.png) center 15px no-repeat; padding: 65px 0 0; }
-
-.tm2 { background:  url(img/zvonok.png) center 15px no-repeat; padding: 65px 0 0; }
-.tm2:hover { background:  url(img/zvonokh.png) center 15px no-repeat; padding: 65px 0 0; }
-
-.tm3 { background:  url(img/calc.png) center 15px no-repeat; padding: 65px 0 0; }
-.tm3:hover { background:  url(img/calch.png) center 15px no-repeat; padding: 65px 0 0; }
-.tm4 { background:  url(img/vopros.png) center 15px no-repeat; padding: 65px 0 0; }
-.tm4:hover { background:  url(img/voprosh.png) center 15px no-repeat; padding: 65px 0 0; }
-
-.tm5 { background:  url(img/skidki.png) center 15px no-repeat; padding: 65px 0 0; }
-.tm5:hover { background:  url(img/skidkih.png) center 15px no-repeat; padding: 65px 0 0; }
-
-.tm6 { background:  url(img/price.png) center 15px no-repeat; padding: 65px 0 0; }
-.tm6:hover { background:  url(img/priceh.png) center 15px no-repeat; padding: 65px 0 0; }
-*/
 .hov:hover{ color: #7bab0d;}
+
+.topmenu{
+  background: #fff;
+  //margin-bottom: 6px;
+  border-top: 1px solid #3f434e;
+  border-bottom: 1px solid #3f434e;
+
+  ul{
+    height: 51px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    li{
+      line-height: 1;
+      margin: 0;
+      font-family: 'PFDinTextPro-light', sans-serif;
+      font-size: 17px;
+      color: #3f434e;
+      text-transform: uppercase;
+    }
+    a{
+      line-height: 1;
+      text-decoration: none;
+      color: #3f434e;
+      transition: $anim;
+      &:hover{
+        color: #7bab0d;  
+      }
+    }
+    span{
+      line-height: 1;
+      color: #7bab0d;
+      transition: $anim;
+    }
+    ul{
+      display: none;
+    }
+  }
+}
