@@ -3,85 +3,98 @@
 <head>
     <meta charset="utf-8">
     <title>Главная страница</title>
-
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <link rel="stylesheet" href="/assets/template/vendor/slick/slick.css">
+    <link rel="stylesheet" href="/assets/template/vendor/slick/slick-theme.css">
     <link rel="stylesheet" href="/assets/template/vendor/magnific-popup/magnific-popup.css">
     <link rel="stylesheet" href="/assets/template/css/main.css">
 
 </head>
 <body>
 
+<div class="header__burger">
+    <a href="#" class="burger toogle-mobile-menu" data-mfp-src="#main-menu"></a>
+</div>
+
 
 <div class="header">
-    <div class="topline">
-        <div class="container">
-            <div class="f-row">
-                <div class="logo">
-                    <a href="/"><img itemprop="image url" src="/assets/template/img/logo.jpg" alt="«ДИАНИКС» - натяжные потолки в Зеленограде"></a>
+    <div class="header__body">
+        <div class="topline">
+            <div class="container">
+                <div class="f-row">
+                    <div class="logo">
+                        <a href="/"><img itemprop="image url" src="/assets/template/img/logo.jpg" alt="«ДИАНИКС» - натяжные потолки в Зеленограде"></a>
+                    </div>
+                    <div class="logo-mobile">
+                        <a href="/"><img src="/assets/template/img/logo_footer.jpg"></a>
+                    </div>
+                    <div class="topline__contacts">
+                        <span><a href="tel:+74993981019"><span itemprop="telephone">+7 (499) 398-10-19</span></a></span>
+                        <span><a href="tel:+79295967274"><span itemprop="telephone">+7 (929)-596-72-74</span></a></span>
+                        <span>Пн-Вс с 9.00-21.00</span>
+                        <span><a href="mailto:info@dianix.ru">info@dianix.ru</a></span>
+                    </div>
+                    <div class="topline__search">
+                        <form role="search" method="get" id="searchform" class="searchform" action="/search/" accept-charset="utf-8">
+                            <div>
+                                <input class="search_input" value="" name="text" id="s" placeholder="Поиск..." type="text">
+                                <input id="searchsubmit" class="search_submit" value="" type="submit">
+                            </div>
+                        </form>
+                    </div>
+                    <a class="search-mobile" href="#"></a>
                 </div>
-                <div class="topline__contacts">
-                    <span><a href="tel:+74993981019"><span itemprop="telephone">+7 (499) 398-10-19</span></a></span>
-                    <span><a href="tel:+79295967274"><span itemprop="telephone">+7 (929)-596-72-74</span></a></span>
-                    <span>Пн-Вс с 9.00-21.00</span> 
-                    <span><a href="mailto:info@dianix.ru">info@dianix.ru</a></span>
-                </div>
-                <div class="topline__search">
-                    <form role="search" method="get" id="searchform" class="searchform" action="/search/" accept-charset="utf-8">
-                        <div>
-                            <input class="search_input" value="" name="text" id="s" placeholder="Поиск..." type="text">
-                            <input id="searchsubmit" class="search_submit" value="" type="submit">
-                        </div>
-                    </form>
-                </div>
-                <a class="search-mobile" href="#"></a>
             </div>
         </div>
-    </div>
-    <div class="actions">
-        <div class="container">
-            <ul class="comercmenu">
-                <li><a class="tm10 hov" href="/vizov-zamershika/">Вызвать замерщика</a></li>
-                <li><a class="tm20 hov" href="/callback/">Заказать звонок</a></li>
-                <li><a class="tm30 hov" href="/calculator/">Калькулятор</a></li>
-                <li><a class="tm40 hov" href="/ask-question/">Задать вопрос</a></li>
-                <li><a class="tm50 hov" href="/akcii/">Акции скидки</a></li>
-                <li><a class="tm60 hov" href="/price/">Прайс-лист</a></li>
-            </ul>
-        </div>    
-    </div>
-    <div class="topmenu">
-        <div class="container">
-            <ul>
-                <li class="root-item-selected"><span>Главная</span></li>
-                <li><a href="/about/" class="root-item">О компании</a></li>
-                <li><a href="/services/" class="root-item">Услуги</a></li>
-                <li><a href="/natyajnie-potolki/" class="root-item">Натяжные потолки</a></li>
-                <li><a href="/svetilniki/" class="root-item">Светильники</a></li>
-                <li><a href="/photo/" class="root-item">Фото</a></li>
-                <li><a href="/video/" class="root-item">Видео</a></li>
-                <li><a href="/services/shipping/" class="root-item">Доставка</a></li>
-                <li><a href="/services/methods-of-payment/" class="root-item">Оплата</a></li>
-                <li><a href="/contacts/" class="root-item">Контакты</a>
-                    <ul class="root-item">
-                        <li><a href="/contacts/solnechnogorsk/" class="parent">Солнечногорск</a>
-                            <ul>
-                                <li><a href="/contacts/solnechnogorsk/berezki/">Березки</a></li>
-                                <li><a href="/contacts/solnechnogorsk/povarovo/">Поварово</a></li>
-                                <li><a href="/contacts/solnechnogorsk/andreevka/">Андреевка</a></li>
-                                <li><a href="/contacts/solnechnogorsk/brehovo/">Брехово</a></li>
-                                <li><a href="/contacts/solnechnogorsk/rjavki/">Ржавки</a></li>
-                                <li><a href="/contacts/solnechnogorsk/chashnikovo/">Чашниково</a></li>
-                                <li><a href="/contacts/solnechnogorsk/podrezkovo/">Подрезково</a></li>
-                                <li><a href="/contacts/solnechnogorsk/lozhki/">Ложки</a></li>
-                            </ul>
-                        </li>  
-                        <li><a href="/contacts/himki/">Химки</a></li>
-                        <li><a href="/contacts/lobnya/">Лобня</a></li>
-                        <li><a href="/contacts/klin/">Клин</a></li>
-                        <li><a href="/contacts/shodnya/">Сходня</a></li>
-                    </ul>
-                </li>
-            </ul>
+        <div class="actions">
+            <div class="container">
+                <ul class="comercmenu">
+                    <li><a class="tm10 hov" href="/vizov-zamershika/">Вызвать замерщика</a></li>
+                    <li><a class="tm20 hov" href="/callback/">Заказать звонок</a></li>
+                    <li><a class="tm30 hov" href="/calculator/">Калькулятор</a></li>
+                    <li><a class="tm40 hov" href="/ask-question/">Задать вопрос</a></li>
+                    <li><a class="tm50 hov" href="/akcii/">Акции скидки</a></li>
+                    <li><a class="tm60 hov" href="/price/">Прайс-лист</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="topmenu">
+            <div class="container">
+                <ul id="main-menu">
+                    <li class="root-item-selected"><span>Главная</span></li>
+                    <li><a href="/about/" class="root-item">О компании</a></li>
+                    <li><a href="/services/" class="root-item">Услуги</a></li>
+                    <li><a href="/natyajnie-potolki/" class="root-item">Натяжные потолки</a></li>
+                    <li><a href="/svetilniki/" class="root-item">Светильники</a></li>
+                    <li><a href="/photo/" class="root-item">Фото</a></li>
+                    <li><a href="/video/" class="root-item">Видео</a></li>
+                    <li><a href="/services/shipping/" class="root-item">Доставка</a></li>
+                    <li><a href="/services/methods-of-payment/" class="root-item">Оплата</a></li>
+                    <li><a href="/contacts/" class="root-item">Контакты</a>
+                        <ul class="root-item">
+                            <li><a href="/contacts/solnechnogorsk/" class="parent">Солнечногорск</a>
+                                <ul>
+                                    <li><a href="/contacts/solnechnogorsk/berezki/">Березки</a></li>
+                                    <li><a href="/contacts/solnechnogorsk/povarovo/">Поварово</a></li>
+                                    <li><a href="/contacts/solnechnogorsk/andreevka/">Андреевка</a></li>
+                                    <li><a href="/contacts/solnechnogorsk/brehovo/">Брехово</a></li>
+                                    <li><a href="/contacts/solnechnogorsk/rjavki/">Ржавки</a></li>
+                                    <li><a href="/contacts/solnechnogorsk/chashnikovo/">Чашниково</a></li>
+                                    <li><a href="/contacts/solnechnogorsk/podrezkovo/">Подрезково</a></li>
+                                    <li><a href="/contacts/solnechnogorsk/lozhki/">Ложки</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/contacts/himki/">Химки</a></li>
+                            <li><a href="/contacts/lobnya/">Лобня</a></li>
+                            <li><a href="/contacts/klin/">Клин</a></li>
+                            <li><a href="/contacts/shodnya/">Сходня</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
@@ -173,6 +186,226 @@
         </ul>
     </div>
 </div>
+
+<div class="linebg">
+    <div class="container">
+        <h1>Натяжные потолки</h1>
+        <p>Компания «ДИАНИКС» предлагает купить  качественные натяжные потолки в Зеленограде  различных типов и оттенков с  профессиональным монтажом. Стоимость  с установкой нашими  специалистами позволит сделать отделку данным материалом выгодной и  экономичной. </p>
+        <p>Появление натяжных потолков произошло относительно недавно,  однако их эксплуатационные характеристики быстро сделали данный вид потолочной  отделки популярным и востребованным. </p>
+        <p>Такая отделка потолка недорогая, но при этом — очень практичная,  стильная и долговечная. </p>
+        <p>Разнообразие натяжных потолков дает возможность подбирать  оптимальные варианты покрытия под особенности интерьера. Современных  потребителей также привлекают широкие возможности по созданию потолочных  поверхностей в несколько ярусов, которые могут отличаться самой причудливой  формой. </p>
+        <h2>Виды натяжных потолков</h2>
+        <div class="main-links__list row">
+            <div class="main-links">
+                <div class="main-links__card">
+                    <a href="/natyajnie-potolki/matovye-natyazhnye-potolki/"><img alt="Матовые натяжные потолки" src="/upload/iblock/60b/60b0eb829c2a6d319172b8e1133cf8dc.jpg" title="Матовые натяжные потолки" width="233" height="175" border="0"></a>
+                    <a class="list-name" href="/natyajnie-potolki/matovye-natyazhnye-potolki/">Матовые</a>
+                    <div class="front-ot">от 400 руб./м2</div>
+                </div>
+            </div>
+            <div class="main-links">
+                <div class="main-links__card">
+                    <a href="/natyajnie-potolki/glyantsevye-natyazhnye-potolki/"><img alt="Глянцевые натяжные потолки" src="/upload/iblock/dfd/dfd0b696831dbe6640d11baae804e9c4.jpg" title="Глянцевые натяжные потолки" width="233" height="175" border="0"></a>
+                    <a class="list-name" href="/natyajnie-potolki/glyantsevye-natyazhnye-potolki/">Глянцевые</a>
+                    <div class="front-ot">от 400 руб./м2</div>
+                </div>
+            </div>
+            <div class="main-links">
+                <div class="main-links__card">
+                    <a href="/natyajnie-potolki/tkanevye-natyazhnye-potolki/"><img alt="Тканевые натяжные потолки" src="/upload/iblock/a60/a60b4ca794f927e8af75210dfe8b4e8c.JPG" title="Тканевые натяжные потолки" width="233" height="175" border="0"></a>
+                    <a class="list-name" href="/natyajnie-potolki/tkanevye-natyazhnye-potolki/">Тканевые</a>
+                    <div class="front-ot">от 1200 руб./м2</div>
+                </div>
+            </div>
+            <div class="main-links">
+                <div class="main-links__card">
+                    <a href="/natyajnie-potolki/metallicheskie-natyazhnye-potolki/"><img alt="Металлические натяжные потолки" src="/upload/iblock/161/161afd7d5430fe3cd4622bbb7ec4b95a.jpeg" title="Металлические натяжные потолки" width="233" height="175" border="0"></a>
+                    <a class="list-name" href="/natyajnie-potolki/metallicheskie-natyazhnye-potolki/">Металлические</a>
+                    <div class="front-ot">от 1300 руб./м2</div>
+                </div>
+            </div>
+            <div class="main-links">
+                <div class="main-links__card">
+                    <a href="/natyajnie-potolki/zamshevye-natyazhnye-potolki/"><img alt="Замшевые натяжные потолки" src="/upload/iblock/fdc/fdc3171330a0788638c5eb243ed44e94.jpg" title="Замшевые натяжные потолки" width="233" height="175" border="0"></a>
+                    <a class="list-name" href="/natyajnie-potolki/zamshevye-natyazhnye-potolki/">Замшевые</a>
+                    <div class="front-ot">от 900 руб./м2</div>
+                </div>
+            </div>
+            <div class="main-links">
+                <div class="main-links__card">
+                    <a href="/natyajnie-potolki/khudozhestvennye-natyazhnye-potolki/"><img alt="Художественные натяжные потолки" src="/upload/iblock/62d/62d2623999c2e935cff2afc22e30f47d.jpg" title="Художественные натяжные потолки" width="233" height="175" border="0"></a>
+                    <a class="list-name" href="/natyajnie-potolki/khudozhestvennye-natyazhnye-potolki/">Художественные</a>
+                    <div class="front-ot">от 2000 руб./м2</div>
+                </div>
+            </div>
+            <div class="main-links">
+                <div class="main-links__card">
+                    <a href="/natyajnie-potolki/urovnevye-natyazhnye-potolki/"><img alt="Уровневые натяжные потолки" src="/upload/iblock/889/8898e8d1a1c53031eb4948a4cd1b4c7d.jpg" title="Уровневые натяжные потолки" width="233" height="175" border="0"></a>
+                    <a class="list-name" href="/natyajnie-potolki/urovnevye-natyazhnye-potolki/">Уровневые</a>
+                    <div class="front-ot">от 2000 руб./м2</div>
+                </div>
+            </div>
+            <div class="main-links">
+                <div class="main-links__card">
+                    <a href="/natyajnie-potolki/natyazhnye-potolki-3d/"><img alt="Натяжные потолки 3d" src="/upload/iblock/0ff/0fffef27731800f3b41e067c47cb0ea5.jpg" title="Натяжные потолки 3d" width="233" height="175" border="0"></a>
+                    <a class="list-name" href="/natyajnie-potolki/natyazhnye-potolki-3d/">3D</a>
+                    <div class="front-ot">от 3000 руб./м2</div>
+                </div>
+            </div>
+        </div>
+        <div class="main-links__more">
+            <a href="/natyajnie-potolki/">Смотреть все &gt;&gt;</a>
+        </div>
+    </div>
+</div>
+
+<div class="main-media">
+    <div class="container">
+        <div class="row main-media__list">
+            <div class="main-media__video column">
+                <iframe width="100%" height="258" src="//www.youtube.com/embed/Vk9us7OqBcE" frameborder="0" allowfullscreen></iframe>
+                <h2>Эффективная защита от залива соседей</h2>
+                <p>Заказав потолочное покрытие с монтажом по привлекательной цене в компании «ДИАНИКС», вы сможете не волноваться о возможном заливе квартиры соседями сверху. Качественные потолочные пленки, представленные известными производителями, выдерживают нагрузку воды до 110 л на 1 м кв. Такой запас прочности и эластичности поможет вам избежать порчи имущества при заливе.</p>
+                <p style="text-align: center;"><a href="/about/useful-information/bezopasnaya-ustanovka-potolkov-dianiks/" title="Безопасная установка потолков Дианикс"><img src="/images/bezopasnaya-ustanovka-potolkov-dianiks-3.png" title="Безопасная установка потолков Дианикс" alt="Безопасная установка потолков Дианикс"></a></p>
+                <div class="link-main"><a href="/about/useful-information/bezopasnaya-ustanovka-potolkov-dianiks/">Узнать подробнее</a></div>
+            </div>
+            <div class="main-media__articles column">
+                <div class="header-bordered">
+                    <a href="#">Статьи</a>
+                </div>
+
+                <div class="news-line">
+                    <div class="news-line__item">
+                        <div class="news-line__caption">
+                            <a href="/about/useful-information/mnogourovnevye-natyazhnye-potolki/">Многоуровневые натяжные потолки</a>
+                        </div>
+                        <div class="news-line__text">
+                            <p>Натяжные потолки в несколько уровней – это отличный способ зонирования пространства, который обеспечивает нужный уровень освещения в рабочих зонах, надежно скрывая все коммуникации.</p>
+                        </div>
+                        <div class="news-line__more">
+                            <a href="/about/useful-information/mnogourovnevye-natyazhnye-potolki/"><i>подробнее</i></a>
+                        </div>
+                    </div>
+                    <div class="news-line__item">
+                        <div class="news-line__caption">
+                            <a href="/about/useful-information/satinovyy-potolok-v-interere/">Сатиновый потолок в интерьере</a>
+                        </div>
+                        <div class="news-line__text">
+                            <p>Многие заказчики останавливают свой выбор на сатиновых потолках. Попробуем разобраться, чем они привлекают потребителей и какие возможности открывают при обустройстве интерьеров?</p>
+                        </div>
+                        <div class="news-line__more">
+                            <a href="/about/useful-information/satinovyy-potolok-v-interere/"><i>подробнее</i></a>
+                        </div>
+                    </div>
+                    <div class="news-line__item">
+                        <div class="news-line__caption">
+                            <a href="/about/useful-information/chernyy-natyazhnoy-potolok-originalnost-ili-ekzotika/">Черный натяжной потолок – оригинальность или экзотика?</a>
+                        </div>
+                        <div class="news-line__text">
+                            <p>Черный натяжной потолок – оригинальный дизайнерский ход, который необходимо использовать с большой осторожностью. Однако если такой потолок будет грамотно вписан в интерьер, он станет действительно интересной деталью, способной подчеркнуть как классические, так и ультра-современные стили.</p>
+                        </div>
+                        <div class="news-line__more">
+                            <a href="/about/useful-information/chernyy-natyazhnoy-potolok-originalnost-ili-ekzotika/"><i>подробнее</i></a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="main-news">
+    <div class="container">
+        <div class="header-bordered">
+            <a href="#">Новости</a>
+        </div>
+        <div class="news-list row">
+            <article>
+                <div class="main-news__date">09.18.2017</div>
+                <div class="main-news__caption">
+                    <a href="/about/news/directions-zelenograd/">Направления Зеленоград</a>
+                </div>
+                <div class="main-news__text">
+                    <p>Компания «ДИАНИКС» рада сообщить о наших новых направлениях. Мы предлагаем качественные натяжные потолки в подмосковном городе Зеленограде и близлежащих...</p>
+                </div>
+                <div class="main-news__more">
+                    <a href="/about/news/directions-zelenograd/">подробнее</a>
+                </div>
+            </article>
+            <article>
+                <div class="main-news__date">09.01.2017</div>
+                <div class="main-news__caption">
+                    <a href="/about/news/event-documentation/">Акция «Светильники в подарок»</a>
+                </div>
+                <div class="main-news__text">
+                    <p>Мы предлагаем для всех клиентов приятную акцию. При оформлении заказа в компании «ДИАНИКС» на монтаж натяжного потолка вместе с установкой элементов освещения,...</p>
+                </div>
+                <div class="main-news__more">
+                    <a href="/about/news/event-documentation/">подробнее</a>
+                </div>
+            </article>
+            <article>
+                <div class="main-news__date">08.11.2017</div>
+                <div class="main-news__caption">
+                    <a href="/about/news/event-documentation/">Направления Сходня</a>
+                </div>
+                <div class="main-news__text">
+                    <p>Компания «ДИАНИКС» специализируется на поставке натяжных материалов для отделки потолков в различных подмосковных районах. Один из офисов-складов открыт...</p>
+                </div>
+                <div class="main-news__more">
+                    <a href="/about/news/event-documentation/">подробнее</a>
+                </div>
+            </article>
+            <article>
+                <div class="main-news__date">07.25.2017</div>
+                <div class="main-news__caption">
+                    <a href="/about/news/event-documentation/">Направления Клин, Клинский район</a>
+                </div>
+                <div class="main-news__text">
+                    <p>Компания «ДИАНИКС» предлагает натяжные потолки высокого качества в городе Клин и Клинском районе. Мы работаем в сфере монтажа и отделки потолков натяжными...</p>
+                </div>
+                <div class="main-news__more">
+                    <a href="/about/news/event-documentation/">подробнее</a>
+                </div>
+            </article>
+        </div>
+    </div>
+</div>
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer__left column">
+                <div class="footer__top">
+                    <a href="/"><img src="/assets/template/img/logo_footer.jpg"></a>
+                    <div class="footer__phones">
+                        <a href="tel:+74993981019">+7 (499)-398-10-19</a><br>
+                        <a href="tel:+79295967274">+7 (929)-596-72-74</a><br>
+                        Пн-Вс с 9.00-21.00
+                    </div>
+                </div>
+                <div class="footer__address">
+                    г. Москва, Зеленоградский АО, ул. Заводская д.1-Б, 3 этаж, пав. 3
+                </div>
+                <div class="footer__copyright">
+                    © 2017 «ДИАНИКС» - натяжные потолки в Зеленограде
+                </div>
+
+            </div>
+            <div class="footer__right column">
+                <div class="yamaps">
+                    <script type="text/javascript" charset="utf-8" src="//api-maps.yandex.ru/services/constructor/1.0/js/?sid=xR2SPzvYNyjzZx4Z2Ati8xWykLIdIGmf&width=300&height=138"></script>
+                </div>
+                <div class="footer__sitemap">
+                    <a class="sitemapf" href="/sitemap/">Карта сайта</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 
     <script src="assets/template/vendor/jquery-3.2.1.min.js"></script>
     <script src="assets/template/vendor/slick/slick.js"></script>

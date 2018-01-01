@@ -1,28 +1,37 @@
-<!doctype html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>Webdevkin • Backbone.js + RequireJS</title>
+//= include/header.html
 
-    <!-- @if NODE_ENV='development' -->
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="/assets/templates/css/main.css">
-    <!-- @endif -->
+<div class="crumbs">
+    <div class="container">
+        <ul class="breadcrumb">
+            <li><a href="/">Главная</a></li>
+            <li class="active">О компании</li>
+        </ul>
+    </div>
+</div>
 
-    <!-- @if NODE_ENV='production' -->
-    <link rel="stylesheet" href="/assets/templates/css/main.min.css">
-    <!-- @endif -->
-</head>
-<body>
-    <h1>Заголовок о компании</h1>
-    <p class="sdv">Текст о компании</p>
-    <!-- @if NODE_ENV='development' -->
-    <script data-main="js/main" src="lib/require.js"></script>
-    <!-- @endif -->
+<div class="middle">
+    <div class="container">
+        <div class="f-row">
+            <div class="content">
+                <h1 class="header1">О компании</h1>
+                <p>Компания «ДИАНИКС» — предоставляет недорого и качественно натяжные потолки всех видов!</p>
+                <p>Натяжной потолок — относительно молодой отделочный материал, который позволяет создавать оригинальный стильный дизайн потолка самой разнообразной формы. Долговечность, практичность, простота монтажа, наряду с неограниченными возможностями декорирования интерьера, сделали натяжные потолки чрезвычайно популярными у современных потребителей.Компания «ДИАНИКС» — предоставляет недорого и качественно натяжные потолки всех видов! Натяжной потолок — относительно молодой отделочный материал, который позволяет создавать оригинальный стильный дизайн потолка самой разнообразной формы. Долговечность, практичность, простота монтажа, наряду с неограниченными возможностями декорирования интерьера, сделали натяжные потолки чрезвычайно популярными у современных потребителей.</p>
+                <img title="banner-company.jpg" src="/upload/medialibrary/60f/60fc275a0a3d4992ce28daea6b45cf8e.jpg" alt="banner-company.jpg"><br>
+            </div>
+            <div class="sidebar">
+                <ul class="left-menu">
+                    <li><a href="#">Полезная информация</a></li>
+                    <li><a href="#">Сертификаты</a></li>
+                    <li><a href="#">Вакансии</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 
-    <!-- @if NODE_ENV='production' -->
-    <script data-main="js/build" src="js/require.js"></script>
-    <script src="js/scripts.js"></script>
-    <!-- @endif -->
-</body>
-</html>
+
+
+
+//= include/footer.html

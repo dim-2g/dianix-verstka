@@ -1,0 +1,76 @@
+//= include/header.html
+
+<script>document.title="Фото. Детальная страница"</script>
+
+<div class="crumbs">
+    <div class="container">
+        <ul class="breadcrumb">
+            <li><a href="/">Главная</a></li>
+            <li class="active">Фото выполненных работ</li>
+        </ul>
+    </div>
+</div>
+
+<div class="middle">
+    <div class="container">
+        <div class="f-row">
+            <div class="content">
+                <h1 class="header1">Фото</h1>
+                <div class="photo-detail__list" id="gallery">
+                    <div class="photo-detail__item">
+                        <a href="/upload/iblock/9c1/9c132b0b7185c65bf847aa2b720d0ab1.jpg" class="photo-detail__card overlay_zoom">
+                            <div class="photo-detail__image" style="background-image: url('/upload/iblock/9f5/9f532d8d40ffa9593ca384570d10f1db.jpg');">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="photo-detail__item">
+                        <a href="/upload/iblock/b9d/b9d9761e7d8e7ae8dfbe5e2c11ef4e6d.jpg" class="photo-detail__card overlay_zoom">
+                            <div class="photo-detail__image" style="background-image: url('/upload/iblock/9f6/9f66893739afebe2ce0dce313ba3b3dd.jpg');">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="photo-detail__item">
+                        <a href="/upload/iblock/5a8/5a8a4a7a5da7a9a73f29dfb999a2e762.jpg" class="photo-detail__card overlay_zoom">
+                            <div class="photo-detail__image" style="background-image: url('/upload/iblock/f26/f26d65332b148d35df1a57c0ef8b3400.jpg');">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="photo-detail__item">
+                        <a href="/upload/iblock/62a/62a2f3ec4bacd8041a39ef96513e3bc9.jpg" class="photo-detail__card overlay_zoom">
+                            <div class="photo-detail__image" style="background-image: url('/upload/iblock/c17/c17cbff67c7e59694baaa049243df86f.jpg');">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="photo-detail__item">
+                        <a href="/upload/iblock/b0d/b0d39c6edad53924599d6dc567666001.jpg" class="photo-detail__card overlay_zoom">
+                            <div class="photo-detail__image" style="background-image: url('/upload/iblock/a24/a2445ca345e020a7e4c00b37531da24a.jpg');">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<link rel="stylesheet" href="/assets/template/vendor/photobox/photobox.css">
+<!--[if lt IE 9]><link rel="stylesheet" href="/assets/template/vendor/photobox/photobox.ie.css"><![endif]-->
+<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src='/assets/template/vendor/photobox/jquery.photobox.js'></script>
+<script>
+    !(function(){
+        'use strict';
+        $('#gallery').photobox('a', { thumbs:true, loop:false }, callback);
+        setTimeout(window._photobox.history.load, 1000);
+        function callback(){
+            console.log('callback for loaded content:', this);
+        };
+    })();
+</script>
+
+
+
+//= include/footer.html

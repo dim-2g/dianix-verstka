@@ -17,11 +17,12 @@ $dark-grey: #333 !default;
 $primary-color: #33c3f0 !default;
 $secondary-color: lighten($dark-grey, 13.5%) !default;
 $border-color: #bbb !default;
-$link-color: #1eaedb !default;
-$font-color: #222 !default;
+$link-color: #7bab0d !default;
+$font-color: #3C3E3F !default;
+$green: #7bab0d;
 
 // Typography
-$font-family: "Lato", sans-serif !default;
+$font-family: 'Roboto', sans-serif;
 
 //Grid Variables
 //$container-width: 1170px !default;
@@ -34,3 +35,5 @@ $column-margin: 0% !default; // space between columns
 
 // Misc
 $global-radius: 0px !default;
+
+$anim: all 0.3s;
