@@ -37,6 +37,53 @@ $(function() {
         mainClass: 'mobile_menu_bg'
     });
 
+    $('.content table').wrapAll('<div class="table-adaptive">');
+
+    $('.work__list').magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        zoom: {
+            enabled: true,
+            duration: 100
+        },
+        mainClass: 'mfp-with-zoom',
+        gallery: {
+            enabled:true
+        }
+    });
+
+    $(".ceiling-slider").slick({
+        dots: false,
+        fade: true,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        speed: '1000',
+        autoplay: false,
+        responsive: [
+            {
+                breakpoint: 500,
+                settings: {
+                    arrows: true,
+                    dots: false,
+                }
+            }
+        ]
+    });
+    $('.--ceiling-slider').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            1000:{
+                items:1
+            }
+        }
+    })
 
 
 
