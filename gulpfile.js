@@ -94,7 +94,7 @@ gulp.task('sass:dev', function() {
         .pipe(plumber())
         .pipe(sourcemaps.init())
         .pipe(sass())
-        .pipe(sourcemaps.write())
+        //.pipe(sourcemaps.write())
         .pipe(gulp.dest(path.src.css))
         .pipe(browserSync.reload({stream: true}));
 });

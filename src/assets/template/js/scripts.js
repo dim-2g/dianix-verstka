@@ -37,8 +37,9 @@ $(function() {
         mainClass: 'mobile_menu_bg'
     });
 
-    $('.content table').wrapAll('<div class="table-adaptive">');
+    $('.content table').wrap('<div class="table-adaptive"/>');
 
+    /*
     $('.work__list').magnificPopup({
         delegate: 'a',
         type: 'image',
@@ -51,6 +52,7 @@ $(function() {
             enabled:true
         }
     });
+    */
 
     $(".ceiling-slider").slick({
         dots: false,
@@ -71,23 +73,67 @@ $(function() {
             }
         ]
     });
-    $('.--ceiling-slider').owlCarousel({
-        loop:true,
-        margin:10,
-        nav:true,
-        responsive:{
-            0:{
-                items:1
-            },
-            1000:{
-                items:1
-            }
+
+    //$('.photobox-gallery').photobox('a', { thumbs:false, loop:false });
+    //$('.product__list').photobox('a', { thumbs:false, loop:false });
+    //setTimeout(window._photobox.history.load, 1000);
+    //$('#gallery').photobox('a', { thumbs:true, loop:false });
+    /*
+    $('.product__list a').fancybox({
+        buttons : [
+            'zoom',
+            'close'
+        ]
+    });
+    $('.work-ceiling__list a').fancybox({
+        thumbs : {
+            autoStart : true
+        },
+        buttons : [
+            'zoom',
+            'close'
+        ]
+    });*/
+
+    $('.work-ceiling__list').photobox('a', { thumbs:true, loop:false });
+
+    //неполное сворачивание списка
+    $('.expand_button').click(function() {
+        var id=$(this).data('id');
+        if($('#'+id).hasClass('exp')){
+            $('#'+id).removeClass('exp');
+            $('#'+id).animate({ height: '875px' }, 600);
+            $(this). text('Смотреть все образцы');
         }
-    })
+        else{
+            $('#'+id).addClass('exp');
+            var h=$('#'+id).css("height", "auto").height();
+            $('#'+id).css("height", "875px");
+            $('#'+id).animate({ height: h+'px' }, 600);
+            $(this). text('Скрыть образцы');
+
+        }
+    });
+
 
 
 
 });
+
+
+!(function(){
+    'use strict';
+    // finally, initialize photobox on all retrieved images
+    $('.photobox-gallery').photobox('a', { thumbs:true, loop:false }, callback);
+    // using setTimeout to make sure all images were in the DOM, before the history.load() function is looking them up to match the url hash
+    setTimeout(window._photobox.history.load, 1000);
+    function callback(){
+        console.log('callback for loaded content:', this);
+    };
+
+})();
+
+
 
 setFixedHeader = function(){
     if ($(window).width()<768) {
@@ -124,4 +170,7 @@ setFixedHeader = function(){
 $(document).scroll(function(){
     setFixedHeader();
 });
-
+$(window).resize(function(){
+    //$('title').text($(window).width());
+    //$('.header').css({'min-height':0});
+});

@@ -55,21 +55,6 @@
     </div>
 </div>
 
-<link rel="stylesheet" href="/assets/template/vendor/photobox/photobox.css">
-<!--[if lt IE 9]><link rel="stylesheet" href="/assets/template/vendor/photobox/photobox.ie.css"><![endif]-->
-<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src='/assets/template/vendor/photobox/jquery.photobox.js'></script>
-<script>
-    !(function(){
-        'use strict';
-        $('#gallery').photobox('a', { thumbs:true, loop:false }, callback);
-        setTimeout(window._photobox.history.load, 1000);
-        function callback(){
-            console.log('callback for loaded content:', this);
-        };
-    })();
-</script>
 
 
 
